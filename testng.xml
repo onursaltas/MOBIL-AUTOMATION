@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Appium Automation">
+    <listeners>
+        <listener class-name="utilities.Listeners" />
+    </listeners>
+    <test thread-count="5" name="Appium Automation">
+        <classes>
+            <class name="tests.AllTest">
+                <methods>
+                    <include name="tryIt"/>
+                    <include name="findAndClickIceland"/>
+                    <include name="selectOnlyEnglish"/>
+                    <include name="selectBookFromFeelGoodSection"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
